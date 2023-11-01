@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Skills Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+
+        }
+    </style>
+    <script>
+        function hideResult() {
+            var resultElement = document.getElementById("result");
+            resultElement.style.display = "none";
+        }
+
+        function showResult() {
+            var resultElement = document.getElementById("result");
+            resultElement.style.display = "block";
+        }
+    </script>
+</head>
+<body onload="hideResult()">
+    <h1>LinkedIn Skills Comparison</h1>
+    <form action="/recommend" method="post" onsubmit="showResult()">
+        <label for="profile_id1">Profile ID 1:</label><br>
+        <input type="text" id="profile_id1" name="profile_id1"><br><br>
+        <label for="profile_id2">Profile ID 2:</label><br>
+        <input type="text" id="profile_id2" name="profile_id2"><br><br>
+        <label for="profile_id3">Profile ID 3:</label><br>
+        <input type="text" id="profile_id3" name="profile_id3"><br><br>
+        <label for="target_skills">Target Skills</label><br>
+        <input type="text" id="target_skills" name="target_skills"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+<br>
+    <br>
+    <h2 id="result" style="display: none;">Profil approprié: <span id="profile_name"></span></h2>
+</body>
+</html>

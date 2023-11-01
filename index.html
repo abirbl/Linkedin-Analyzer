@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkedIn Post Analysis Report Generator</title>
+    <!-- Add your CSS file here -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>LinkedIn Post Report Generator</h1>
+    <div class="form-container">
+        <label for="post-url">Enter LinkedIn Post URL:</label>
+        <input type="text" id="post-url" placeholder="https://www.linkedin.com/posts/..." />
+        <button onclick="generateReport()">Generate Report</button>
+    </div>
+    <div id="loading" class="loading">Generating report, please wait...</div>
+    <div id="error" class="error"></div>
+    <div id="success" class="success"></div>
+
+    <!-- Add your JavaScript file here -->
+    <script src="/static/script.js"></script>
+</body>
+</html>

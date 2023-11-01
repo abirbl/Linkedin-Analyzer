@@ -1,0 +1,88 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 30px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.loading {
+  display: none;
+  margin-top: 30px;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+
+/* Add some additional styling for the report section */
+#report {
+  display: none;
+  margin-top: 30px;
+  text-align: left;
+}
+
+#report h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+#report p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+#reactions-comments-chart,
+#sentiment-analysis-chart {
+  margin: 30px auto;
+  max-width: 500px;
+}
